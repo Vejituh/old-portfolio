@@ -87,10 +87,14 @@ header img {
 }
 header a {
   padding: 1rem 4rem !important;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FAFAD2), color-stop(50%, #191970));
+  background: -o-linear-gradient(left, #FAFAD2 50%, #191970 50%);
   background: linear-gradient(to right, #FAFAD2 50%, #191970 50%);
   background-size: 200% 100%;
   background-position: left bottom;
   border: 4px solid #FAFAD2 !important;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 header a:hover {
