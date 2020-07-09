@@ -1,0 +1,51 @@
+$font-stack: Helvetica, sans-serif;
+$primary-colour: #191970;
+$secondary-colour: #FAFAD2;
+
+body {
+    font: 100% $font-stack;
+}
+.is-primary {
+    background-color: $primary-colour!important;
+}
+.is-primary-text {
+    color: $primary-colour!important;
+}
+.is-secondary {
+    background-color: $secondary-colour!important;
+}
+.is-secondary-text {
+    color: $secondary-colour!important;
+}
+header {
+    .hero-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    figure {
+        border: 5px solid $secondary-colour;
+        background-color: $secondary-colour;
+        border-radius: 290486px;
+        height: 238px;
+        width: 238px;
+        margin-bottom: 2rem;
+    }
+    img {
+        margin-top: -25px;
+    }
+    a {
+        padding: 1rem 4rem!important;
+        background: linear-gradient(to right, $secondary-colour 50%, $primary-colour 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        border: 4px solid $secondary-colour!important;
+        transition:all 0.2s linear;
+        &:hover {
+            background-position:right bottom;
+            color: $secondary-colour!important;
+        }
+    }
+}
