@@ -44,12 +44,39 @@ header {
         background-size: 200% 100%;
         background-position:left bottom;
         border: 4px solid $secondary-colour!important;
-        -webkit-transition:all 0.2s linear;
-        -o-transition:all 0.2s linear;
-        transition:all 0.2s linear;
+        -webkit-transition:all 0.01s linear;
+        -o-transition:all 0.01s linear;
+        transition:all 0.01s linear;
         &:hover {
             background-position:right bottom;
             color: $secondary-colour!important;
         }
     }
 }
+    section{
+        padding: 10rem 0!important;
+        h2 {
+            text-align: justify;
+            margin:0 9rem;
+            @media all and (max-width: 1200px) {
+                margin: 0 3rem;
+            }
+        }
+        .birds-img {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            figure {
+                border: 5px solid $primary-colour;
+                background-color: $primary-colour;
+                border-radius: 290486px;
+                height: 256px;
+                width: 256px;
+                overflow: hidden;
+                margin: 2rem 0;
+            }
+            img {
+                margin-top: -50px;
+            }
+        }
+    }
