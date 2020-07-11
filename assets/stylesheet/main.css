@@ -115,8 +115,15 @@ section h2 {
   }
 }
 section .img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 section .birds-img figure {
@@ -127,6 +134,8 @@ section .birds-img figure {
   width: 256px;
   overflow: hidden;
   margin: 2rem 0;
+  -webkit-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
 }
 section .birds-img figure:hover .middle {
@@ -137,6 +146,7 @@ section .middle {
   position: absolute;
   top: 80%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -144,10 +154,15 @@ section .middle {
 }
 section .birds-img img {
   margin-top: -50px;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 section .birds-img img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 section .text {
@@ -169,10 +184,14 @@ section .text {
 .proj-img img {
   position: relative;
   height: 100% !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .proj-img img:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   transform: scale(1.5);
   margin-top: 60px;
 }
