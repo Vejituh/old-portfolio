@@ -177,4 +177,8 @@ section .text {
   margin-top: 60px;
 }
 
+footer .content div a {
+  margin: 0 0.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */
