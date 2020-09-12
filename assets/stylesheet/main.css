@@ -81,9 +81,11 @@ header figure {
   height: 238px;
   width: 238px;
   margin-bottom: 2rem;
+  padding-top: 0.3125rem;
+  overflow: hidden;
 }
 header img {
-  margin-top: -25px;
+  margin: -20px 0 0 8px;
 }
 header a {
   padding: 1rem 4rem !important;
